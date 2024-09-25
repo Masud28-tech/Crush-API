@@ -58,10 +58,10 @@ function wantToMarry(wantToMarry){
         if(wantToMarry){
             if(!legalToMarriage()){
                 reject("Not Legal for marriage! 👨‍⚖️,  why not date each other till then");
+            }else{
+                console.log(`You are married to ${girlName} 🎉🤗`);
+                resolve("Wish you happy married life");
             }
-
-            console.log(`You are married to ${girlName} 🎉🤗`);
-            resolve("Wish you happy married life");
         }
         else{
             reject("Sadly 🥱, She don't want to marry you 💔");
